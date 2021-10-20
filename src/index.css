@@ -1,6 +1,7 @@
 :root {
   --color-logo: #61dafb;
   --size-logo: 40vmin;
+  --timing-logo: 20s;
 }
 
 body {
