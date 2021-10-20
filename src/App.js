@@ -1,7 +1,12 @@
+import { useEffect } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  useEffect(() => {
+    const color = getComputedStyle(document.documentElement).getPropertyValue('--color-logo');
+    console.log(`--color-logo: ${color}`);
+  }, [])
   return (
     <div className="App">
       <header className="App-header">
